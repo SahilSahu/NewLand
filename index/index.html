@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Responsive Sticky Navbar</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                              PLACEHUNT
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#studentsignup">Student</a></li>
+                                    <li><a href="#companysignup">Company</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+
+            </header>
+            <div class="popup" id="studentsignup">
+              <div class="popup-inner">
+                <div class="popup__photo">
+                  <img src="https://images.unsplash.com/photo-1515224526905-51c7d77c7bb8?ixlib=rb-0.3.5&s=9980646201037d28700d826b1bd096c4&auto=format&fit=crop&w=700&q=80" alt="">
+                </div>
+                <div class="popup__text">
+                  <h1>STUDENT</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
+                </div>
+                <a class="popup__close" href="#">X</a>
+              </div>
+            </div>
+
+            <div class="popup" id="companysignup">
+                <div class="popup-inner">
+                  <div class="popup__photo">
+                    <img src="https://images.unsplash.com/photo-1515224526905-51c7d77c7bb8?ixlib=rb-0.3.5&s=9980646201037d28700d826b1bd096c4&auto=format&fit=crop&w=700&q=80" alt="">
+                  </div>
+                  <div class="popup__text">
+                    <h1>Company</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
+                  </div>
+                  <a class="popup__close" href="#">X</a>
+                </div>
+            </div>
+            <div class="content">
+                  <!--div class="list"><ul class="mat_list card scrollable">
+                        <div class="mat_list_title" style="background-image:url(https://image.freepik.com/free-vector/shiny-triangles-background_23-2147512500.jpg);">
+                          <h1>Some Cool Specifications</h1>
+                        </div>
+                        <li><center><p>Background Images!</p></center></li>
+                        <li><center><p>just pastet into the style of the title div</p></center></li>
+                        <li><center><p>They cover by default</p></center></li>
+                        <li><center><p>And they are centered</p></center></li>
+                        <li><center><p>By the way, you can use the full size of the list Item</p></center></li>
+                      </ul>
+                  </div-->
+                  <div class="container">
+                    <h2>Recruiting Companies</h2>
+                    <span>Some of the companies who've recruited excellent applicants over the years.</span>
+                    <hr><br>
+                    <ul class="blog-post columns-2">
+                      <li>
+                        <img src="https://ununsplash.imgix.net/photo-1414788020357-3690cfdab669?q=75&fm=jpg&s=da7d3842604f06bf5c6ded7f4fe7aeed" />
+                        <h3>Blog Post One</h3>
+                        <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                        <div class="button">Read More</div>
+                      </li>
+                      <li>
+                        <img src="https://unsplash.imgix.net/photo-1415889678233-eb900aeee9e1?q=75&fm=jpg&s=a41f4d6b1848cd673323fa4ee17da470" />
+                        <h3>Blog Post Two</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+                        <div class="button">Read More</div>
+                      </li>
+                      <li>
+                       <img src="https://unsplash.imgix.net/photo-1414542563971-94513793d046?q=75&fm=jpg&s=8fbfdbbec683a6b4634e558f7db67ee7" />
+                        <h3>Blog Post Three</h3>
+                        <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                        <div class="button">Read More</div>
+                      </li>
+                      <li>
+                        <img src="https://ununsplash.imgix.net/photo-1416339134316-0e91dc9ded92?q=75&fm=jpg&s=883a422e10fc4149893984019f63c818" />
+                        <h3>Blog Post Four</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+                        <div class="button">Read More</div>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+
+            <section id="wrapper" class="skewed">
+              <div class="layer bottom">
+                <div class="content-wrap">
+                  <div class="content-body">
+                    <h1>Candidates</h1>
+                    <hr><br>
+                    <p>The Tesla Model S is the first of the Tesla models to be mass marketed to the public. It's the most recognized Tesla car on the road today. With it's 360 charging range, this car is a great way to impress your friends and your wallet.</p>
+                  </div>
+                  <img src="img/image1.1.png" alt="">
+                </div>
+              </div>
+
+              <div class="layer top">
+                  <div class="content-wrap">
+                    <div class="content-body">
+                      <h1>Employer</h1>
+                      <hr><br>
+                      <p>The Tesla Model X is Teslas latest crossover roadster that is a fun and exciting way to get around town. The 350 miles per charge is a great way to save money and impress your friends with its Auto Pilot features and amenities.</p>
+                    </div>
+                    <img src="img/image2.2.png" alt="">
+                  </div>
+                </div>
+
+                <div class="handle"></div>
+            </section>
+
+            <div class="dbl">
+                <div id="one"><h1>About US</h1><hr style="height: 2px;background: white;"><p>Welcome to the Training and Placement Cell of V.E.S Institute of Technology. V.E.S. Institute of Technology was established in 1984.<br><br>
+                            V.E.S.I.T Training and Placement Cell caters for enhancing not only the employability skills but also the overall development of the student’s personality. The focus of the cell is to strike a match between recruiter expectations and student aspirations.</p>
+                </div>
+                <div id="two">
+                  <a href="https://ves.ac.in/vesit/" class="fill-div" target="_blank"></a>
+                </div>
+            </div>
+            
+      </div>
+
+      <script src="main.js"></script>
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>
